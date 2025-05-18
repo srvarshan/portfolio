@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+  color: #333;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+body.dark-mode {
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.contact a {
+  color: #aee1ff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.contact a:hover {
+  color: #ffffff;
+}
+main {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+body.dark-mode section {
+  background: #2c2c2c;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+section:hover {
+  transform: scale(1.02);
+}
+h2 {
+  color: #004d99;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+body.dark-mode h2 {
+  color: #aee1ff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+article {
+  margin-bottom: 20px;
+}
+.toggle-dark {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #004d99;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.toggle-dark:hover {
+  background: #0066cc;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #004d99;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+#topBtn:hover {
+  background-color: #0066cc;
+}
